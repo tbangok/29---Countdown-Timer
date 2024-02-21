@@ -36,7 +36,7 @@ function displayEnd(timestamp) {
     const end = new Date(timestamp);
     const hour = end.getHours();
     const min = end.getMinutes();
-    endTime.innerHTML = `Be back at 0${hour < 12 ? hour : hour - 12}:${min < 10 ? '0' : ''}${min}`;
+    endTime.innerHTML = `Be back at ${hour < 12 ? hour : hour - 12}:${min < 10 ? '0' : ''}${min}`;
 }
 
 function set() {
